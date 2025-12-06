@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بیمه ایران - نمایندگی مسفروش</title>
+    <style>
+        body {
+            font-family: "Tahoma";
+            margin: 0;
+            background: url('https://www.publicdomainpictures.net/pictures/30000/velka/wood-texture-1462835809F6c.jpg') repeat;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(#055d2b, #033a1a);
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+        .logo {
+            width: 95px;
+        }
+        nav {
+            background-color: #055d2b;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            font-weight: bold;
+        }
+        .container {
+            width: 90%;
+            max-width: 950px;
+            margin: auto;
+            padding: 15px;
+        }
+        .section {
+            background: white;
+            padding: 15px;
+            margin-top: 18px;
+            border-radius: 9px;
+            border-right: 8px solid #055d2b;
+        }
+        .section h2 {
+            color: #055d2b;
+        }
+
+        /* ----- تغییرات تصاویر ثابت ----- */
+        .image-box {
+            margin-top: 20px;
+        }
+        .image-box img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .faq button {
+            width: 100%;
+            background: #055d2b;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            margin-top: 5px;
+            border: none;
+            font-size: 16px;
+            border-radius: 6px;
+            text-align: right;
+        }
+        .answer {
+            display: none;
+            padding: 8px;
+            background: #d8ecd9;
+            border-radius: 6px;
+            margin-top: 4px;
+        }
+        footer {
+            background: #033a1a;
+            color: white;
+            padding: 20px;
+            margin-top: 25px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Iran_insurance_logo.svg/1920px-Iran_insurance_logo.svg.png" class="logo">
+    <h1>نمایندگی بیمه ایران - مسفروش</h1>
+    <p>مشاوره رایگان بیمه عمر و سرمایه‌گذاری</p>
+</header>
+
+<nav>
+    <a href="#benefits">مزایای بیمه عمر</a>
+    <a href="#faq">سوالات پر تکرار</a>
+    <a href="#contact">تماس</a>
+</nav>
+
+<div class="container">
+
+    <div class="section image-box">
+        <h2>بیمه عمر و سرمایه‌گذاری</h2>
+        <p>بهترین زمان برای شروع، امروز است.</p>
+        <img src="https://www.iraninsurance.ir//Portals/0/bime%20omr.jpg" alt="">
+        <img src="https://tejaratnews.com/wp-content/uploads/2023/09/life-insurance.jpg" alt="">
+    </div>
+
+    <div class="section" id="benefits">
+        <h2>مزایای بیمه عمر</h2>
+        <ul>
+            <li>دریافت سرمایه مناسب هنگام بازنشستگی</li>
+            <li>پوشش بیماری‌های خاص، نقص عضو، از کار افتادگی</li>
+            <li>وام بدون ضامن از اندوخته بیمه</li>
+            <li>معاف از مالیات بودن بیمه عمر</li>
+            <li>پرداخت سرمایه به خانواده در صورت فوت</li>
+        </ul>
+    </div>
+
+    <div class="section faq" id="faq">
+        <h2>سوالات پر تکرار</h2>
+
+        <button onclick="toggleAnswer('a1')">بیمه عمر از چه سنی قابل شروع است؟</button>
+        <div class="answer" id="a1">از بدو تولد تا ۷۰ سالگی</div>
+
+        <button onclick="toggleAnswer('a2')">آیا امکان کاهش یا افزایش مبلغ وجود دارد؟</button>
+        <div class="answer" id="a2">بله، سالانه امکان تغییر مبلغ اقساط وجود دارد.</div>
+
+        <button onclick="toggleAnswer('a3')">آیا وام بدون ضامن است؟</button>
+        <div class="answer" id="a3">بله، از اندوخته خود شخص پرداخت می‌شود.</div>
+
+    </div>
+
+    <div class="section" id="contact">
+        <h2>تماس با نمایندگی</h2>
+        <p>شماره تماس: <strong>۰۹۱۳۴۷۲۷۲۳۸</strong></p>
+        <p>اینستاگرام: (بعداً اضافه می‌شود)</p>
+        <p>آدرس: </p>
+    </div>
+
+</div>
+
+<footer>
+    <p>نمایندگی بیمه ایران - مسفروش</p>
+</footer>
+
+<script>
+function toggleAnswer(id) {
+    var x = document.getElementById(id);
+    x.style.display = (x.style.display === "block" ? "none" : "block");
+}
+</script>
+
+</body>
+</html>
